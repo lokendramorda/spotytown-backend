@@ -64,7 +64,7 @@ const Suggestion = mongoose.model('Suggestion', suggestionSchema);
 
 // Middlewares
 app.use(cors({
-  origin: process.env.CORS_ORIGIN || 'http://localhost:3000',
+  origin: ['http://localhost:3000', 'https://spotytown.netlify.app'],
   methods: ['GET', 'POST'],
   allowedHeaders: ['Content-Type'],
   credentials: true
